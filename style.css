@@ -35,9 +35,7 @@ body {
     width:500px;
     height: 500px;
   }
-  div.Education,div.Skills{
-    padding-left: 100px;
-  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,9 +43,7 @@ body {
     width:450px;
     height: 450px;
   }
-  div.Education,div.Skills{
-    padding-left: 100px;
-  }
+
 }
 
 
@@ -73,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.7rem;
   line-height: 5.5rem;
 }
 
@@ -103,4 +99,9 @@ i{
 .footer{
   font-size: 20px;
   padding-right: 20px;
+}
+
+.logo{
+  border:0.2rem solid #ffffff;
+  border-radius: 50%;
 }
