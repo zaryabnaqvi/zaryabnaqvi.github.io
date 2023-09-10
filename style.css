@@ -49,6 +49,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   img{
+    display: none;
     width:200px;
     height: 200px;
 
