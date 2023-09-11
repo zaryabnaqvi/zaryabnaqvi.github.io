@@ -48,6 +48,8 @@ body {
 
 
 @media only screen and (max-width: 767px) {
+  
+
   img{
     display: none;
     width:200px;
@@ -105,4 +107,8 @@ i{
 .logo{
   border:0.2rem solid #ffffff;
   border-radius: 50%;
+}
+
+.btn-outline-primary:hover{
+color: #050505;
 }
