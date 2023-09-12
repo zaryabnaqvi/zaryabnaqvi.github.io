@@ -9,14 +9,111 @@ body {
 
 
 }
-html,body
-{
+
+#navbar.transparent {
+  background-color: transparent;
+}
+
+#navbar.visible {
+  background-color: #0d6efd;
+  /* Set your desired background color */
+}
+
+.navbar {
+  transition: background-color 0.3s;
+
+}
+
+/* 
+body {
+  background-color: #050505;
+} */
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+
+
+}
+
+
+.l-section-img {
+  background-image: url("./High_resolution_wallpaper_background_ID_77701642487.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 0;
+  background-size: cover;
+  transition: 0s linear;
+  transition-property: background-position;
+  overflow: hidden;
+}
+
+
+
+.l-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.l-section {
+  position: relative;
+  margin: 0 auto;
+}
+
+.l-section.full_height {
+  min-height: 100vh;
+}
+
+.l-section.height_medium {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.l-height {
+  position: relative;
+  margin: 0 auto;
+}
+
+
+section.full_height.valign_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .l-sidebar,
+  .l-section.height_small,
+  .l-section.height_medium {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+}
+body{
 
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  top: 0;
+  bottom : 0;
+  left:0;
+  right: 0;
 } */
 /* width */
 ::-webkit-scrollbar {
