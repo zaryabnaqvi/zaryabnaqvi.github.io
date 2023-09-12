@@ -41,13 +41,75 @@
   .tag.visible {
   opacity: 1;
   transform: translate(0, 0);
+
+
+}
+
+
+.l-section-img{
+  background-image:url("./High_resolution_wallpaper_background_ID_77701642487.jpg") ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 0 ;
+  background-size: cover;
+  transition: 0s linear;
+  transition-property: background-position;
+}
+
+
+
+.l-section-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.l-section{
+  position: relative;
+  margin: 0 auto;
+}
+
+.l-section.full_height {
+  min-height: 100vh;
+}
+
+.l-section.height_medium {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.l-height{
+position: relative;
+margin: 0 auto;
+}
+
+
+section.full_height.valign_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 600px){
+.l-sidebar, .l-section.height_small, .l-section.height_medium {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 }
  </style>
 
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)"><b><<span>ZN</span>/></b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -76,17 +138,57 @@
   </div>
 </nav>
 </div>
-<div class="container pb-5 About" id="about">
-    <div class="row">
-        <div class="col-lg-6">
-            <img src="zaryabb.jpg" alt="zaryabnaqvi" class="rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 50px #ccc;" >
+
+
+<section class='l-section wpb_row height_medium full_height valign_center container-fluid'>
+  <div class="l-section-img thumnail" data-img-width="1920" data-img-height="1080" ></div>
+  <div class="l-section-overlay" style="background: linear-gradient(0deg,#050505,rgba(13, 10, 28, 0)) ;"></div>
+
+  <div style="top: '3rem';position: relative; overflow: hidden;" class="container-fluid mb-5 mt-5">
+
+
+
+      <div class='container'>
+          <div class='row'>
+              <div data-aos="fade-right" data-aos-duration="700" class='col-sm-12 col-md-8 col-lg-8'>
+                  <div class="text-left pt-5">
+                      <h1 class='h1 text-left' style=" color: white ;text-transform: none; ">Hi , Zaryab`s here</h1>
+                      <div class="subheading mb-3 text-uppercase"><span class="subheading text-uppercase element"></span> -<i class="fa-solid fa-house h4"></i> Karachi - Pakistan </div>
+                      <div><a href="zaryabN CV .pdf (1).pdf"download class="btn btn-outline-primary btn-sm mb-2" >Download CV</a></div>
+                      <!-- <div class="">A revolutionary leader from the seventh century named Hussain took the strongest stance in favour of moral fairness. Millions are motivated to work towards a just society by his legacy.</div> -->
+                      <div class="" ><p> My name is Zaryab Naqvi and i'm a passionate Computer Science second year student at <a href="https://www.neduet.edu.pk/">NED University of Engineering and Technology</a> and a <b>Web Developer</b> using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology. </p></div>
+
+                  </div>
+
+              </div>
+              <div class="col-sm-4">
+              
+                  <img id="pro" src="zaryabb.jpg" alt="zaryabnaqvi" class="rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 30px #ccc;" >
+          
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+</section>
+
+
+
+<div class="container-fluid pb-5 About" id="about">
+  <div class="container">
+    <div id="abou" class="row pb-5">
+        <div class="col-lg-6 align-items-center justify-content-center d-flex order-lg-1 order-sm-2">
+          <img id="pro3" alt="Coder GIF" height=350 width=450 src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" class="text-center rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 30px #ccc;" />
+           <img id="pro1" src="zaryabb.jpg" alt="zaryabnaqvi" class="rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 50px #ccc;" >
         </div>
         
-        <div class="col-lg-6">
-            <h1 class="text-primary">Zaryab Naqvi</h1>
-            <div class="subheading mb-3 text-uppercase"><span class="subheading text-uppercase element"></span> -<i class="fa-solid fa-house h4"></i> Karachi - Pakistan </div>
-            <div><a href="zaryabN CV .pdf (1).pdf"download class="btn btn-outline-primary btn-sm mb-2" >Download CV</a></div>
-            <div class="mb-1">
+        <div class="col-lg-6 mt-5 order-lg-2 order-sm-1">
+            <h1 class="text-primary h1">Zaryab Naqvi</h1>
+
+            <div class="mb-5">
                 My name is Zaryab Naqvi and i'm a passionate Computer Science second year student at <a href="https://www.neduet.edu.pk/">NED University of Engineering and Technology</a> and a <b>Web Developer</b> using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology. <br>
                 I’m currently working on <b>Databases</b> and <b>Big Data</b>.
                 I’m currently learning <b><a href="https://reactjs.org/">React.js</a></b> .      
@@ -98,6 +200,7 @@
         </div>
 
     </div>
+  </div>
     <hr>
     
 </div>
@@ -157,7 +260,7 @@
     <div class="row">
       <div class="col-sm-6">
       <div class="border border-2 p-sm-3 m-3 mb-3" style="border-radius: 30px; box-shadow: 0 4px 8px 0 rgba(255, 255, 255), 0 6px 20px 0 rgba(225, 225, 225);">
-        <div class="text-center position-relative"><i style="background-color: #050505;" class=" fa-solid fa-screwdriver-wrench text-primary p-3 h2 logo"></i></div>
+        <div class="text-center position-relative"><i style="background-color: #050505;" class=" fa-solid fa-screwdriver-wrench text-primary mt-2 p-3 h2 logo"></i></div>
 
         <h2 class="text-center text-primary mb-3" style="overflow-wrap: break-word;"><b>Soft skills</b></h2>
         <ul class="mx-2">
@@ -228,7 +331,8 @@
   <br>
   <br>
 <hr>
-<div class="container my-5 tag" id="Certificates">
+<div class="container-fluid my-5 tag" id="Certificates">
+  <div class="container">
   <h1 class="text-center text-primary h1" >Certications<i  class="fa-solid fa-certificate text-primary p-1 h1"></i></h1>
   <br>
   <div class="subheading">Showcase of Certificates i have Achieved .</div>
@@ -296,11 +400,11 @@
       </div>
     </div>
   </div>
-
+</div>
 </div>
 <hr>
 
- 
+ <div class="container-fluid">
 <div class="container mt-5 mb-5 tag" id="project">
     <div class="row">
       <div class="col-sm-5">
@@ -320,10 +424,12 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid px-3 py-2 bg-primary text-white text-end">
-    <p class="text-black footer">zaryab.110786@gmail.com</p>
+ 
+</div>
+<div class="container-fluid px-3 py-2 bg-primary text-white text-end">
+  <div class="text-black footer">zaryab.110786@gmail.com</div>
 
-  </div>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -355,6 +461,57 @@
     }
   }
 });
+
+
+const handlescroll = () => {
+            const scrollPosition = window.scrollY;
+            const screenWidth = window.innerWidth
+            if (screenWidth >= 768) {
+            const parallaxContainer = document.querySelector('.l-section-img');
+            parallaxContainer.style.backgroundPositionY = `${scrollPosition }px`;
+
+            }
+          };
+
+
+          
+      
+          // Add the scroll event listener when the component mounts
+          window.addEventListener('scroll', handlescroll);
+      
+          // Remove the scroll event listener when the component unmounts
+
+
+          const handleScroll = () => {
+          
+          const navbar = document.getElementById('navbar');
+         
+          const scrollPosition = window.scrollY ;
+
+
+    
+          if (scrollPosition > 0) {
+
+            navbar.classList.remove('transparent');
+            navbar.classList.add('visible');
+   
+           
+            
+
+          } else {
+            navbar.classList.remove('visible');
+            navbar.classList.add('transparent');
+           
+          }
+
+          };
+    
+
+        
+       
+       
+        window.addEventListener('scroll', handleScroll);
+         
 </script>
 </body>
 </html>

@@ -4,7 +4,7 @@ body {
   color: #ffffff;
 
   line-height: 32px;
-  background-color: #000000;
+  background-color: #050505;
 
 
 }
@@ -31,18 +31,37 @@ body {
   padding-top:100px;
 }
 @media only screen and (min-width: 992px) {
-  img{
-    width:500px;
-    height: 500px;
+  img#pro{
+    width:400px;
+    height: 400px;
   }
+  .h1{
+    font-size: 4rem!important;
+    }
+
+    img#pro1{
+      display: none;
+      width:200px;
+      height: 200px;
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
-  img{
-    width:450px;
-    height: 450px;
+  img#pro{
+    width:400px;
+    height: 400px;
   }
+
+
+  .h1{
+    font-size: 4rem!important;
+    }
+    img#pro1{
+      display: none;
+      width:200px;
+      height: 200px;
+    }
 
 }
 
@@ -50,14 +69,35 @@ body {
 @media only screen and (max-width: 767px) {
   
 
-  img{
+  img#pro{
     display: none;
     width:200px;
     height: 200px;
 
   }
+
+  img#pro3{
+    display: none;
+    width:200px;
+    height: 200px;
+
+  }
+
+  img#pro1{
+    display: block;
+    width:200px;
+    height: 200px;
+  }
+  
   div.Education{
     padding-left: none;
+  }
+  .h1{
+    font-size: 3rem!important;
+    }
+
+  .row#abou{
+    flex-direction: column-reverse;
   }
 }
 a{
@@ -112,3 +152,18 @@ i{
 .btn-outline-primary:hover{
 color: #050505;
 }
+
+
+#navbar.transparent {
+  background-color: transparent;
+}
+
+#navbar.visible {
+  background-color:#0d6efd; /* Set your desired background color */
+}
+
+.navbar{
+  transition: background-color 0.3s;
+
+}
+
