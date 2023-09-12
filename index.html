@@ -10,7 +10,7 @@
   <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
   <!-- <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet"> -->
   <!-- <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -32,6 +32,20 @@
  
  
  <style>
+#navbar.transparent {
+  background-color: transparent;
+}
+
+#navbar.visible {
+  background-color:#0d6efd; /* Set your desired background color */
+}
+
+.navbar{
+  transition: background-color 0.3s;
+
+}
+
+
   body{
     background-color: #050505;
   }
@@ -112,14 +126,14 @@ section.full_height.valign_center {
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top overflow-hidden w-100">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)"><b><<span>ZN</span>/></b></a>
-    <button id="collapseButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon small"></span>
     </button>
     <div class="collapse navbar-collapse text-center justify-content-end me-3" id="mynavbar">
-      <ul class="navbar-nav justify-content-center">
+      <ul class="navbar-nav justify-content-center overflow-hidden">
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
@@ -181,15 +195,15 @@ section.full_height.valign_center {
 
 
 <div style="background: rgb(5,5,5);
-background: linear-gradient(180deg, rgba(5,5,5,1) 10%, rgba(0,20,71,1) 100%, rgba(5,39,89,1) 100%);" class="container-fluid pb-5 About" id="about">
+background: linear-gradient(180deg, rgba(5,5,5,1) 10%, rgba(0,20,71,1) 100%, rgba(5,39,89,1) 100%);" class="l-section wpb_row height_medium full_height valign_center container-fluid pb-5 About" id="about">
   <div class="container">
     <div id="abou" class="row pb-5">
-        <div data-aos="fade-right" data-aos-duration="700" class="col-lg-6 align-items-center justify-content-center d-flex order-lg-1 order-sm-2">
+        <div class="col-lg-6 align-items-center justify-content-center d-flex order-lg-1 order-sm-2">
           <img id="pro3" alt="Coder GIF" height=350 width=450 src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" class="text-center rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 30px #ccc;" />
            <img id="pro1" src="zaryabb.jpg" alt="zaryabnaqvi" class="rounded-circle border-primary border my-lg-4 " style=" border-width: 0.2rem!important; box-shadow: 0 0 50px #ccc;" >
         </div>
         
-        <div data-aos="fade-left" data-aos-duration="700" class="col-lg-6 mt-5 order-lg-2 order-sm-1">
+        <div  class="col-lg-6 mt-5 order-lg-2 order-sm-1">
             <h1 class="text-primary h1">Zaryab Naqvi</h1>
 
             <div class="mb-5">
@@ -410,15 +424,15 @@ background: linear-gradient(0deg, rgba(5,5,5,1) 10%, rgba(0,20,71,1) 100%, rgba(
 <hr>
 
  <div class="container-fluid">
-<div class="container mt-5 mb-5 tag" id="project">
+<div class="container mt-5 mb-5" id="project">
     <div class="row">
       <div class="col-sm-5">
-        <h2 class="text-primary" style="">My projects <i class="fa-solid fa-diagram-project h2"></i></h2>
+        <h2 class="text-primary" >My projects <i class="fa-solid fa-diagram-project h2"></i></h2>
         <p>If you want to look at my Project visit my Github</p>
         <a href="https://github.com/zaryabnaqvi"><i class="fab fa-github text-primary">   </i></a>
       </div>
       <div class="col-sm-5">
-        <h2 style="" class="text-primary">Connect with me <i class="fa-solid fa-link h2"></i></h2>
+        <h2 class="text-primary">Connect with me <i class="fa-solid fa-link h2"></i></h2>
         <p>Feel free to connect </p>
         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fas fa-envelope-square text-primary"></i></a>
         <a href="https://m.facebook.com/zaryab.naqvi.12"><i class="fab fa-facebook-f text-primary">   </i></a>
@@ -437,12 +451,13 @@ background: linear-gradient(0deg, rgba(5,5,5,1) 10%, rgba(0,20,71,1) 100%, rgba(
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 <!-- Custom scripts for this template -->
 <script>
+  AOS.init();
   var typed = new Typed('.element', {
   strings: ["WEB DEVELOPER", "COMPUTER SCIENTIST","NEDIAN <i class='fa-solid fa-heart h5'></i>","MERN"],
   typeSpeed: 70,
@@ -486,6 +501,7 @@ const handlescroll = () => {
       
           // Remove the scroll event listener when the component unmounts
         
+          const navbar = document.getElementById('navbar');
 
           const handleScroll = () => {
           
@@ -510,12 +526,8 @@ const handlescroll = () => {
           }
 
           };
-    
-
-        
-       
-       
         window.addEventListener('scroll', handleScroll);
+
 
 
         var navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
@@ -553,7 +565,7 @@ navbar.classList.add('transparent');
   }
 })
 
-AOS.init();
+
 </script>
 </body>
 </html>
