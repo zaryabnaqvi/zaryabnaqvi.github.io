@@ -7,7 +7,7 @@
   /* text-transform: capitalize; */
   transition: all .2s linear;
   text-decoration: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   
 
 
@@ -15,9 +15,10 @@
 
 div{
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2{
   overflow-y: hidden;
 }
 
@@ -25,7 +26,7 @@ body {
   font-family: 'Quicksand', serif;
   /* color: #868e96; */
   color: #ffffff;
-  line-height: 32px;
+  /* line-height: 32px; */
   background-color: #050505;
   /* overflow-x:hidden; */
 
@@ -222,6 +223,10 @@ section.full_height.valign_center {
   .row#abou{
     flex-direction: column-reverse;
   }
+
+  .tag-button{
+    width: 100%;
+  }
 }
 a{
   text-decoration-line:none ;
@@ -274,6 +279,21 @@ i{
 
 .btn-outline-primary:hover{
 color: #050505;
+}
+
+.tag-button{
+font-size: 1rem;
+padding: 0.2rem;
+box-sizing: border-box;
+margin: 1rem;
+color: #ffffff;
+background: linear-gradient( linear-gradient(45deg, rgb(10, 11, 18) 30%, rgba(0,20,71,1) 100%, rgba(5,39,89,1) 100%));
+border-radius: 10px;
+border: 0.2rem solid white;
+display: block;
+text-align: center;
+/* width:20% */
+width: 16.6666666666667%;
 }
 
 
