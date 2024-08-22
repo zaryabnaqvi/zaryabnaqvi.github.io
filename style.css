@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Champion';
  
-  src: url('../champions-font/Champions-Bold.ttf') format('truetype');
+  src: url("./ChampionGothic-Featherweight.ttf") format('truetype');
   font-display: swap;
 }
 
