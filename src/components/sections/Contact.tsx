@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 relative">
+    <section id="contact" className="py-20 md:px-4 relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="Contact" subtitle="Get In Touch" />
         
@@ -72,11 +72,11 @@ const Contact = () => {
           initial="hidden"
           animate={controls}
           variants={fadeIn}
-          className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8"
+          className="mt-12 grid grid-cols-1 text-left lg:grid-cols-2 md:gap-8"
         >
           <motion.div variants={slideUp} custom={0}>
             <Card className="h-full border-none bg-card/50 backdrop-blur-sm">
-              <CardContent className="p-8 flex flex-col h-full">
+              <CardContent className="md:p-8 px-0 py-6 flex flex-col h-full">
                 <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-8">
                   I'm currently seeking opportunities as a Software Engineer or Full Stack Developer. 

@@ -52,12 +52,12 @@ const Reviews = () => {
   }, [controls, inView]);
 
   return (
-    <section id="reviews" className="py-20 px-4 relative">
+    <section id="reviews" className="py-20 md:px-4 relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading 
           title="Client Reviews" 
           subtitle="What People Say"
-          align="center"
+          align="left"
         />
         
         <motion.div
@@ -65,7 +65,7 @@ const Reviews = () => {
           initial="hidden"
           animate={controls}
           variants={staggerContainer}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="mt-12 grid grid-cols-1 text-left md:grid-cols-2 lg:grid-cols-3 md:gap-6"
         >
           {reviews.map((review, index) => (
             <motion.div
@@ -75,7 +75,7 @@ const Reviews = () => {
               className="h-full"
             >
               <Card className="h-full border-none bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6 flex flex-col h-full">
+                <CardContent className="md:p-6 py-6 px-0 flex flex-col h-full">
                   <div className="flex items-center gap-4 mb-4">
                     <Avatar className="h-12 w-12">
                       <AvatarImage src={review.image} alt={review.name} />
