@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center py-20 px-4 overflow-hidden">
       <div className="container max-w-6xl mx-auto">
         <motion.div 
           initial="hidden"
