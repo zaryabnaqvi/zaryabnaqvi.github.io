@@ -40,7 +40,7 @@ const projects: Project[] = [
     image: cowasjeeImage,
     technologies: ['React', 'Tailwind CSS', 'Express', 'Vercel'],
     links: {
-      live: 'https://ned-cowasjee-school.vercel.app/',
+      live: 'https://www.cowasjeeschool.edu.pk/',
       code: 'https://github.com/zaryabnaqvi/ned-cowasjee-school'
     },
     features: [
