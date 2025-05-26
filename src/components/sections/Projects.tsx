@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ExternalLink, Github as GitHub, School, Building, BookUser } from 'lucide-react';
+import { ExternalLink, Github as GitHub, School, Building, BookUser, Pen } from 'lucide-react';
 import SectionHeading from '@/components/ui/section-heading';
 import { fadeIn, staggerContainer } from '@/lib/animations';
 import cowasjeeImage from '@/assets/cowasjee.png'; // Placeholder for the project image
@@ -13,6 +13,7 @@ import estateImage from '@/assets/fairmans.png'; // Placeholder for the project 
 import examitiImage from '@/assets/examiti.png'; // Placeholder for the project image
 import cheatproofImage from '@/assets/cheatproof.png'; // Placeholder for the project image
 import azaEHussainImage from '@/assets/aza-e-hussain.png'; // Placeholder for the project image
+import davidStitch from '@/assets/david-stitch.png'; // Placeholder for the project image
 
 interface Project {
   id: string;
@@ -57,8 +58,8 @@ const projects: Project[] = [
     image: estateImage,
     technologies: ['React', 'Tailwind CSS', 'Express.js', 'Vercel'],
     links: {
-      live: 'https://fairman-estate.vercel.app/',
-      code: 'https://github.com/zaryabnaqvi/fairman-estate'
+      live: 'https://fairmansestateagents.co.uk/',
+      // code: 'https://github.com/zaryabnaqvi/fairman-estate'
     },
     features: [
       'User-friendly property search functionality',
@@ -76,8 +77,8 @@ const projects: Project[] = [
     image: examitiImage,
     technologies: ['React', 'Express.js', 'MongoDB', 'llbama 2'],
     links: {
-      live: 'https://examiti.vercel.app/',
-      code: 'https://github.com/zaryabnaqvi/examiti'
+      live: 'https://examiti.netlify.app/',
+    
     },
     features: [
       'Examination editor with question bank',
@@ -121,6 +122,24 @@ const projects: Project[] = [
       'Responsive design for all devices'
     ],
     icon: School
+  },
+  {
+    id: 'david-stitch',
+    title: 'David Stitch - Personal Portfolio',
+    description: 'A personal portfolio website showcasing projects and skills with a modern design.',
+    category: 'personal',
+    image: davidStitch,
+    technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
+    links: {
+      live: 'https://davidstitch.com/',
+    },
+    features: [
+      'Showcase of personal projects and skills',
+      'Modern and responsive design',
+      'Smooth animations using Framer Motion',
+      'Email contact form for inquiries'
+    ],
+    icon: Pen
   }
 ];
 
