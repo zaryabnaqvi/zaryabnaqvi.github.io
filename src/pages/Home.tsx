@@ -31,8 +31,8 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background w-full mx-auto        text-foreground overflow-hidden">
-      <div className="relative lg:mx-2 w-full flex flex-col items-center   z-10">
+    <div className="min-h-screen bg-background w-full        text-foreground overflow-hidden">
+      <div className="relative  w-full  z-10">
         <Hero />
         <About />
         <Experience />

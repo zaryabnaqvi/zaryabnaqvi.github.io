@@ -5,7 +5,7 @@ import "./App.css"; // Import global styles
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="dark">
       <Home />
       <Toaster />
     </ThemeProvider>

@@ -20,7 +20,7 @@ const About = () => {
   }, [controls, inView]);
 
   return (
-    <section id="about" className="py-20 px-4 w-full mx-auto relative">
+    <section id="about" className="py-20 px-4 w-full relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="About Me" subtitle="My Background & Interests" />
         
