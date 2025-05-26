@@ -23,12 +23,12 @@ const FeaturedProject = () => {
   }, [controls, inView]);
 
   return (
-    <section id="featured" className="py-20 px-4 relative">
+    <section id="featured" className="py-20 md:px-4 relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading 
           title="Featured Project" 
           subtitle="Cheatproof.online - Final Year Design Project" 
-          align="center"
+          align="left"
         />
         
         <motion.div
@@ -36,12 +36,12 @@ const FeaturedProject = () => {
           initial="hidden"
           animate={controls}
           variants={fadeIn}
-          className="mt-12"
+          className="mt-12 text-left"
         >
           <Card className="overflow-hidden border-none bg-card/50 backdrop-blur-sm">
             <CardContent className="p-0">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="p-8 lg:p-12 flex flex-col">
+              <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8">
+                <div className="md:p-8 py-4 lg:p-12 flex flex-col">
                   <motion.div variants={slideUp} custom={0}>
                     <div className="flex items-center gap-3 mb-6">
                       <Shield className="h-8 w-8 text-primary" />
@@ -123,8 +123,8 @@ const FeaturedProject = () => {
                 </div>
                 
                 <div className="relative lg:h-auto">
-                  <div className="h-full min-h-[400px] bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center overflow-hidden">
-                    <div className="relative w-[90%] max-w-[500px] aspect-video rounded-lg overflow-hidden shadow-xl">
+                  <div className="h-full md:min-h-[400px] bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center overflow-hidden">
+                    <div className="relative w-full md:w-[90%] max-w-[500px] aspect-video rounded-lg overflow-hidden shadow-xl">
                       {/* Placeholder for featured project image */}
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm flex items-center justify-center">
                         <img

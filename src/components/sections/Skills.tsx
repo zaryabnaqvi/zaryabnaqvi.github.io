@@ -91,7 +91,7 @@ const Skills = () => {
   }, [controls, inView]);
 
   return (
-    <section id="skills" className="py-20 px-4 relative">
+    <section id="skills" className="py-20 md:px-4 relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="Skills" subtitle="My Technical Expertise" />
         
@@ -109,7 +109,7 @@ const Skills = () => {
                   <TabsTrigger 
                     key={category.id} 
                     value={category.id} 
-                    className="flex items-center gap-2"
+                    className="flex items-center md:gap-2"
                   >
                     <category.icon className="h-4 w-4" />
                     <span>{category.name}</span>
@@ -121,10 +121,10 @@ const Skills = () => {
             {skillCategories.map((category:any) => (
               <TabsContent key={category.id} value={category.id} className="mt-0">
                 <Card className="border-none bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6">
+                  <CardContent className="p-0 py-6 md:p-6">
                     <div
                       
-                      className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8"
+                      className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 gap-y-8"
                     >
                       {category.skills.map((skill:any) => (
                         <div 

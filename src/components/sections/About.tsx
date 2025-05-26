@@ -20,7 +20,7 @@ const About = () => {
   }, [controls, inView]);
 
   return (
-    <section id="about" className="py-20 px-4 w-full relative">
+    <section id="about" className="py-20 lg:px-4 w-full relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="About Me" subtitle="My Background & Interests" />
         
@@ -29,11 +29,11 @@ const About = () => {
           initial="hidden"
           animate={controls}
           variants={fadeIn}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12"
+          className="grid grid-cols-1 w-full text-left md:grid-cols-3 lg:gap-8 mt-12"
         >
           <div className="md:col-span-1">
             <Card className="h-full border-none bg-card/50 backdrop-blur-sm">
-              <CardContent className="p-6 flex flex-col h-full justify-center">
+              <CardContent className="md:p-6 m-0 p-0 py-3 flex flex-col h-full justify-center">
                
                   {/* Placeholder for profile image */}
                   <img
@@ -62,7 +62,7 @@ const About = () => {
           
           <div className="md:col-span-2">
             <Card className="h-full border-none bg-card/50 backdrop-blur-sm">
-              <CardContent className="p-6 space-y-6">
+              <CardContent className="md:p-6  p-0 space-y-6">
                 <p className="text-lg">
                   As an ambitious final-year (8 semester) Computer Science student at NEDUET, I am actively seeking an internship in software engineering and web development. With a strong foundation in computer science and a passion for leveraging web technologies, I am eager to apply my skills in a dynamic and hands-on environment.
                 </p>

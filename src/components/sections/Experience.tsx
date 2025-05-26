@@ -40,7 +40,7 @@ const Experience = () => {
   }, [controls, inView]);
 
   return (
-    <section id="experience" className="py-20 px-4 relative">
+    <section id="experience" className="py-20 lg:px-4 text-left relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="Experience" subtitle="My Professional Journey" />
         
@@ -55,8 +55,8 @@ const Experience = () => {
             <motion.div key={index} variants={fadeIn}>
               <Card className="overflow-hidden border-none bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-0">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-                    <div className="md:col-span-2 p-6 border-r border-border/50 bg-card/30">
+                  <div className="grid grid-cols-1 md:grid-cols-5 md:gap-6">
+                    <div className="md:col-span-2 md:p-6 border-r border-border/50 bg-card/30">
                       <div className="flex items-center gap-3 mb-4">
                         <Briefcase className="h-5 w-5 text-primary" />
                         <h3 className="text-xl font-semibold">{job.title}</h3>
@@ -78,7 +78,7 @@ const Experience = () => {
                         ))}
                       </div>
                     </div>
-                    <div className="md:col-span-3 p-6">
+                    <div className="md:col-span-3 py-2 md:p-6">
                       <h4 className="text-lg font-medium mb-4">Key Responsibilities</h4>
                       <ul className="space-y-3">
                         {job.responsibilities.map((resp, i) => (
@@ -88,7 +88,7 @@ const Experience = () => {
                             custom={i}
                             className="flex items-start gap-3"
                           >
-                            <span className="flex-shrink-0 h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                            <span className="flex-shrink-0   h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center mt-1">
                               <span className="h-2 w-2 rounded-full bg-primary"></span>
                             </span>
                             <span className="text-foreground/80">{resp}</span>

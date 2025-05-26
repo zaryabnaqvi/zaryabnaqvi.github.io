@@ -188,7 +188,7 @@ const Projects = () => {
     : projects.filter(project => project.category === activeTab);
 
   return (
-    <section id="projects" className="py-20 px-4 relative">
+    <section id="projects" className="py-20 md:px-4 relative">
       <div className="container max-w-6xl mx-auto">
         <SectionHeading title="Projects" subtitle="My Recent Work" />
         
@@ -197,7 +197,7 @@ const Projects = () => {
           initial="visible"
           animate={controls}
           variants={fadeIn}
-          className="mt-8 mb-12"
+          className="mt-8 mb-12 text-left"
         >
           <Tabs defaultValue="all" value={activeTab} onValueChange={(value) => setActiveTab(value as 'all' | 'professional' | 'personal')}>
             <div className="flex justify-center">
@@ -236,7 +236,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
   return (
     <motion.div
       variants={staggerContainer}
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6"
     >
       {projects.map((project, index) => (
         <ProjectCard key={project.id} project={project} index={index} />
@@ -264,7 +264,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           />
         </div>
         
-        <CardContent className="flex flex-col flex-grow p-6">
+        <CardContent className="flex flex-col flex-grow p-0 py-6 md:p-6">
           <div className="flex items-start mb-4">
             <IconComponent className="h-5 w-5 mt-1 mr-2 text-muted-foreground" />
             <div>

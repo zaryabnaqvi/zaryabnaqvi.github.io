@@ -21,13 +21,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center py-20 px-1 lg:px-4 overflow-hidden">
       <div className="container max-w-6xl mx-auto">
         <motion.div 
           initial="hidden"
           animate="visible"
           variants={fadeIn}
-          className="flex flex-col items-start space-y-6 md:w-3/4"
+          className="flex flex-col text-left items-start space-y-6 md:w-3/4"
         >
           <motion.h2 
             variants={slideUp}
@@ -61,10 +61,10 @@ const Hero = () => {
             variants={slideUp}
             className="flex flex-wrap gap-4 pt-4"
           >
-            <Button asChild variant="default" size="lg">
+            <Button asChild variant="default" className='w-full lg:w-fit' size="lg">
               <a href="#projects">View My Work</a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" className='w-full lg:w-fit' size="lg">
               <a href={resume} target="_blank" rel="noopener noreferrer">
                 Resume <ExternalLink className="ml-2 h-4 w-4" />
               </a>
