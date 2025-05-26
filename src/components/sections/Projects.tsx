@@ -14,6 +14,7 @@ import examitiImage from '@/assets/examiti.png'; // Placeholder for the project 
 import cheatproofImage from '@/assets/cheatproof.png'; // Placeholder for the project image
 import azaEHussainImage from '@/assets/aza-e-hussain.png'; // Placeholder for the project image
 import davidStitch from '@/assets/david-stitch.png'; // Placeholder for the project image
+import foodiaHalifaxImage from '@/assets/foodia-halifax.png'; // Placeholder for the project image
 
 interface Project {
   id: string;
@@ -125,9 +126,9 @@ const projects: Project[] = [
   },
   {
     id: 'david-stitch',
-    title: 'David Stitch - Personal Portfolio',
-    description: 'A personal portfolio website showcasing projects and skills with a modern design.',
-    category: 'personal',
+    title: 'David Stitch - Embroidery Artist Portfolio',
+    description: 'A professional portfolio website showcasing embroidery projects and skills.',
+    category: 'professional',
     image: davidStitch,
     technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
     links: {
@@ -140,6 +141,22 @@ const projects: Project[] = [
       'Email contact form for inquiries'
     ],
     icon: Pen
+  },{
+    id: 'foodia-halifax',
+    title: 'Foodia Halifax - Restaurant',
+    description: 'A restaurant website for Halifax, featuring menu and delicious cuisines.',
+    category: 'professional',
+    image: foodiaHalifaxImage,
+    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express'],
+    links: {
+      live: 'https://foodiahalifax.com/',
+    },
+    features: [
+      'Search and filter restaurants by cuisine and location',
+      'User reviews and ratings for each restaurant',
+      'Responsive design for mobile and desktop'
+    ],
+    icon: Building
   }
 ];
 
