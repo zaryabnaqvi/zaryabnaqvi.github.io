@@ -45,7 +45,7 @@ const Home = () => {
       </div>
       
       {/* Gradient background */}
-      <div className="fixed inset-0 -z-10 bg-background">
+      <div className="fixed inset-0 bg-background">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -inset-[10px] opacity-50">
             <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-3xl" />
